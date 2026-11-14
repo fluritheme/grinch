@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Grinch by Fluri — A little holiday mischief for your website</title>
+    <meta
+      name="description"
+      content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. Free TypeScript npm package."
+    />
+    <meta name="theme-color" content="#b9e94b" />
+    <meta name="author" content="František Gejdoš" />
+    <link rel="canonical" href="https://grinch.fluri.xyz/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Grinch by Fluri — He's up to snow good." />
+    <meta
+      property="og:description"
+      content="Your website. His holiday heist. A tiny green visitor with a sack full of personality."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grinch.fluri.xyz/" />
+    <meta property="og:image" content="https://grinch.fluri.xyz/social.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://grinch.fluri.xyz/#software",
+            "name": "Grinch by Fluri",
+            "description": "An animated holiday character that steals illustrated presents, climbs page surfaces, hides and reacts to visitors.",
+            "programmingLanguage": "TypeScript",
+            "codeRepository": "https://github.com/fluritheme/grinch",
+            "downloadUrl": "https://www.npmjs.com/package/@fluritheme/grinch",
+            "license": "https://opensource.org/license/mit",
+            "author": { "@id": "https://fluri.xyz/#founder" },
+            "publisher": { "@id": "https://fluri.xyz/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://fluri.xyz/#organization",
+            "name": "Fluri Themes",
+            "url": "https://fluri.xyz/",
+            "founder": { "@id": "https://fluri.xyz/#founder" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://fluri.xyz/#founder",
+            "name": "František Gejdoš",
+            "alternateName": "Frantisek Gejdos",
+            "jobTitle": "Founder of Fluri Themes",
+            "url": "https://fluri.xyz/founder/",
+            "sameAs": [
+              "https://www.instagram.com/gejdosfrantisek/",
+              "https://www.linkedin.com/in/gejdosfrantisek/"
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="module" src="/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip" href="#controls">Skip to the controls</a>
+    <header class="nav" data-grinch-ui data-grinch-ignore>
+      <a class="brand" href="https://fluri.xyz/" aria-label="Fluri Themes home"
+        >fluri<span>✳</span></a
+      ><span class="edition">03 / GRINCH</span>
+      <nav aria-label="Main navigation">
+        <a href="#install">Get the package ↗</a
+        ><a href="https://github.com/fluritheme/grinch">Source ↗</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="habitat" aria-labelledby="title">
+        <div class="kicker">
+          <span>A LITTLE GREEN. A LITTLE GREED.</span><span>THE HOLIDAY HEIST / 2026</span>
+        </div>
+        <h1 id="title">UP TO<br /><span>SNOW GOOD.</span></h1>
+        <div class="hero-bottom">
+          <p>Your website.<br />His questionable<br />holiday plans.</p>
+          <div class="stamp">
+            TINY<br />SACK.<br /><em>BIG<br />ENERGY.</em>
+          </div>
+          <a class="jump" href="#controls">Meet the mischief <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="gift-row" aria-label="The little holiday gift shelves">
+          <article class="gift-card cream" id="gift-one" data-grinch-gift data-grinch-object>
+            <span class="card-number">01 / THE NICE LIST</span>
+            <h2>Leave a little<br />room for<br /><em>delight.</em></h2>
+            <span class="card-foot">SOMEONE HAS OTHER PLANS. ↗</span>
+          </article>
+          <article class="gift-card red" id="gift-two" data-grinch-gift data-grinch-object>
+            <span class="card-number">02 / THE NAUGHTY LIST</span>
+            <h2>A present.<br />A plan.<br />A little problem.</h2>
+            <span class="card-foot">KEEP AN EYE ON THE RIBBON. ↗</span>
+          </article>
+          <article class="gift-card forest" id="gift-three" data-grinch-gift data-grinch-object>
+            <span class="card-number">03 / THE PLOT TWIST</span>
+            <h2>Maybe his<br />heart just<br /><em>needs a nudge.</em></h2>
+            <span class="card-foot">THERE'S STILL TIME TO BE NICE. ↗</span>
+          </article>
+        </div>
+      </section>
+      <section
+        class="control-room"
+        id="controls"
+        aria-labelledby="control-title"
+        data-grinch-ui
+        data-grinch-ignore
+      >
+        <div class="control-heading">
+          <div>
+            <span class="eyebrow">YOU'RE IN ON THE MISCHIEF.</span>
+            <h2 id="control-title">Give him<br />a little nudge.</h2>
+          </div>
+          <p>
+            He sneaks, climbs and stashes presents. Get a little too close and watch his plans
+            unravel. Or see what happens when he finds his heart.
+          </p>
+        </div>
+        <div class="actions">
+          <button type="button" class="action primary" id="steal">
+            Plan a little heist <span>↗</span></button
+          ><button type="button" class="action" id="shoo">Caught you! <span>!</span></button
+          ><button type="button" class="action" id="redeem">Grow his heart <span>♡</span></button
+          ><button type="button" class="action" id="return">
+            Return the presents <span>↶</span>
+          </button>
+        </div>
+        <div class="tuning">
+          <label for="size"
+            >Presence <output id="size-value">1.2×</output
+            ><input id="size" type="range" min="0.6" max="1.8" step="0.1" value="1.2" /></label
+          ><label for="speed"
+            >Mischief speed <output id="speed-value">1.0×</output
+            ><input id="speed" type="range" min="0.25" max="2" step="0.05" value="1" /></label
+          ><label class="switch"><input id="shy" type="checkbox" checked />Pointer-shy</label
+          ><button class="pause" id="pause" aria-pressed="false">Ⅱ Pause mischief</button>
+        </div>
+        <div class="live-data">
+          <span><i></i><span id="activity">MAKING AN ENTRANCE</span></span
+          ><span><b id="stolen-count">0</b> / <b id="gift-count">3</b> IN THE SACK</span
+          ><button type="button" id="restart">Start fresh ↺</button>
+        </div>
+      </section>
+      <section class="feature-section" aria-labelledby="feature-title">
+        <div class="section-label">A SMALL CHARACTER. A WHOLE PERSONALITY.</div>
+        <h2 id="feature-title">
+          He came for the presents.<br /><em>You'll stay for the details.</em>
+        </h2>
+        <div class="feature-grid">
+          <article>
+            <span>01 / A REAL LITTLE ROUTINE</span>
+            <h3>Plan. Climb. Pinch.</h3>
+            <p>
+              A proper heist, one present at a time. Sneaky footsteps, reaching hands, a growing
+              sack and a suspiciously satisfied grin.
+            </p>
+          </article>
+          <article>
+            <span>02 / A SENSE OF PLACE</span>
+            <h3>He knows your edges.</h3>
+            <p>
+              Illustrated presents settle on real elements. The resident climbs between ledges,
+              ducks behind cards and peeks around the edge.
+            </p>
+          </article>
+          <article>
+            <span>03 / THERE'S A SOFTER SIDE</span>
+            <h3>A little heart goes far.</h3>
+            <p>
+              Kindness mode brings the presents home. He'll wave, warm up and give everyone a break
+              from the mischief.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="install" id="install" data-grinch-ui data-grinch-ignore>
+        <div>
+          <span class="eyebrow">A FEW LINES. A LITTLE TROUBLE.</span>
+          <h2>Invite him in.</h2>
+          <button
+            class="command"
+            id="copy-install"
+            type="button"
+            aria-label="Copy npm installation command"
+          >
+            <code>npm i @fluritheme/grinch</code><span aria-hidden="true">⧉</span>
+          </button>
+          <p>TypeScript · Zero runtime dependencies · MIT · No CSS import</p>
+          <a href="https://github.com/fluritheme/grinch#readme">Read the full guide ↗</a>
+        </div>
+        <div class="code-panel">
+          <div class="tabs" role="tablist" aria-label="Framework examples">
+            <button
+              role="tab"
+              aria-selected="true"
+              aria-controls="code"
+              id="tab-typescript"
+              data-code="typescript"
+            >
+              TypeScript</button
+            ><button
+              role="tab"
+              aria-selected="false"
+              tabindex="-1"
+              aria-controls="code"
+              id="tab-react"
+              data-code="react"
+            >
+              React</button
+            ><button
+              role="tab"
+              aria-selected="false"
+              tabindex="-1"
+              aria-controls="code"
+              id="tab-vue"
+              data-code="vue"
+            >
+              Vue</button
+            ><button id="copy-code" type="button" aria-label="Copy selected integration">
+              Copy ⧉
+            </button>
+          </div>
+          <pre
+            id="code"
+            role="tabpanel"
+            aria-labelledby="tab-typescript"
+            tabindex="0"
+          ><code id="code-content">import { createGrinch } from '@fluritheme/grinch';
+
+const visitor = createGrinch({
+  targets: '[data-grinch-gift]',
+  mood: 'mischievous',
+});
+
+// A little kindness changes the story.
+visitor.redeem();
+
+// Clean up when your page unmounts.
+visitor.destroy();</code></pre>
+        </div>
+      </section>
+      <section class="faq" aria-labelledby="faq-title">
+        <span class="eyebrow">BEFORE YOU LEAVE THE PRESENTS OUT.</span>
+        <h2 id="faq-title">A few little questions.</h2>
+        <details>
+          <summary>How do I place presents on my website?</summary>
+          <p>
+            Mark an element with <code>data-grinch-gift</code>. The package draws an illustrated
+            present on its upper edge. You can also pass a selector or a list of elements.
+          </p>
+        </details>
+        <details>
+          <summary>Does he keep up when the page moves?</summary>
+          <p>
+            He uses document coordinates. Present anchors follow scrolling, moving elements and
+            ordinary layout changes, including while paused. Overflow and native top-layer dialogs
+            still apply.
+          </p>
+        </details>
+        <details>
+          <summary>What about reduced motion and touch?</summary>
+          <p>
+            Reduced-motion visitors get a still character. Touch scrolling stays native, and the
+            overlay lets normal clicks pass through. Optional visitor pause controls are available.
+          </p>
+        </details>
+        <details>
+          <summary>Can I use him with Winter?</summary>
+          <p>
+            Yes. The packages run independently. Add <code>data-grinch-gift</code> to your
+            snow-covered surfaces and let both characters share the scene.
+          </p>
+        </details>
+      </section>
+      <section class="closing">
+        <span>THE HOLIDAYS COULD USE A LITTLE CHARACTER.</span>
+        <p>Make room for<br /><em>a little mischief.</em></p>
+        <a href="#install">Make it your website ↗</a>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="https://fluri.xyz/">fluri<span>✳</span></a>
+      <div>
+        Grinch by Fluri Themes<br />Made by
+        <a href="https://fluri.xyz/founder/">František Gejdoš ↗</a>
+      </div>
+      <nav aria-label="More Fluri themes">
+        <a href="https://winter.fluri.xyz/">Winter ↗</a
+        ><a href="https://spider.fluri.xyz/">Spider ↗</a
+        ><a href="https://github.com/fluritheme/grinch">GitHub ↗</a>
+      </nav>
+    </footer>
+    <div id="toast" role="status" hidden></div>
+  </body>
+</html>

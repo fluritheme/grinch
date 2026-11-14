@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Grinch verification</title>
+    <style>
+      body {
+        margin: 0;
+        background: #eef2df;
+        min-height: 1700px;
+        font: 16px system-ui;
+      }
+      #root {
+        position: relative;
+        margin: 25px;
+        width: calc(100% - 50px);
+        height: 620px;
+        border: 1px solid #456;
+      }
+      #one,
+      #two {
+        position: absolute;
+        top: 250px;
+        width: 34%;
+        height: 240px;
+        background: #d8e6c6;
+        border: 1px solid #284;
+      }
+      #one {
+        left: 30px;
+      }
+      #two {
+        right: 30px;
+        top: 330px;
+        background: #c55966;
+      }
+      button {
+        min-height: 44px;
+      }
+      #click {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+      }
+      #scrollbox {
+        position: absolute;
+        top: 850px;
+        left: 20px;
+        width: 80%;
+        height: 300px;
+        overflow: auto;
+      }
+      #nested {
+        height: 700px;
+        padding-top: 200px;
+      }
+      #three {
+        height: 200px;
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <article id="one" data-grinch-gift data-grinch-object>One present</article>
+      <article id="two" data-grinch-gift data-grinch-object>Another present</article>
+      <button id="click">Clickable content</button>
+    </div>
+    <div id="scrollbox">
+      <div id="nested"><article id="three">Nested surface</article></div>
+    </div>
+    <script type="module">
+      import { createGrinch } from '../src/index.ts';
+      window.createGrinch = createGrinch;
+      window.grinch = createGrinch({
+        root: document.querySelector('#root'),
+        territory: 'root',
+        targets: '[data-grinch-gift]',
+        entrance: 'appear',
+        fearRadius: 0,
+        autoSteal: false,
+      });
+      window.clicks = 0;
+      document.querySelector('#click').onclick = () => window.clicks++;
+    </script>
+  </body>
+</html>

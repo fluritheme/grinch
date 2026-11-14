@@ -1,0 +1,83 @@
+{
+  "name": "@fluritheme/grinch",
+  "version": "0.1.0",
+  "description": "A mischievous green holiday visitor that sneaks around your website, steals illustrated presents, hides behind elements and learns a little kindness. Zero dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "František Gejdoš",
+    "url": "https://fluri.xyz/founder/",
+    "email": "fluritheme@gmail.com"
+  },
+  "homepage": "https://grinch.fluri.xyz/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluritheme/grinch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fluritheme/grinch/issues"
+  },
+  "keywords": [
+    "grinch",
+    "christmas",
+    "holiday",
+    "animation",
+    "website-effects",
+    "canvas",
+    "typescript",
+    "react",
+    "vue",
+    "mascot",
+    "interactive",
+    "presents",
+    "fluri",
+    "zero-dependencies"
+  ],
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "packageManager": "pnpm@10.33.2",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "build:site": "node scripts/prepare-site.mjs && vite build",
+    "dev": "vite --host 127.0.0.1 --port 5196",
+    "preview": "vite preview --host 127.0.0.1 --port 4196",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:browser": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm typecheck && pnpm test && pnpm build && pnpm build:site && pnpm test:browser && pnpm format:check && pnpm release:check",
+    "release:check": "node scripts/release-check.mjs",
+    "deploy": "pnpm build:site && wrangler deploy",
+    "prepublishOnly": "pnpm build && pnpm release:check"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.6",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3",
+    "vite": "8.3.6",
+    "vitest": "5.1.0",
+    "wrangler": "4.158.0"
+  }
+}

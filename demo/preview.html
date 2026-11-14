@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Grinch runtime preview</title>
+    <style>
+      @font-face {
+        font-family: DM;
+        src: url('/fonts/dm-sans-latin.woff2');
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: DM, system-ui;
+        background: #b9e94b;
+        color: #153629;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        background: #153629;
+      }
+      .scene {
+        height: 730px;
+        padding: 38px;
+        background: #b9e94b;
+        position: relative;
+      }
+      .scene + section {
+        background: #fff5df;
+      }
+      .kicker {
+        font: 13px monospace;
+        letter-spacing: 0.1em;
+      }
+      h1 {
+        font-size: 48px;
+        margin: 12px 0;
+        letter-spacing: -2px;
+        line-height: 1;
+      }
+      article {
+        position: absolute;
+        top: 500px;
+        left: 40px;
+        right: 40px;
+        height: 190px;
+        background: #c92c42;
+        color: #fff5df;
+        padding: 28px;
+        font-size: 29px;
+        font-weight: 700;
+        border: 1px solid #153629;
+      }
+      section + section article {
+        background: #153629;
+      }
+      small {
+        display: block;
+        margin-top: 14px;
+        font: 13px monospace;
+      }
+      p {
+        max-width: 390px;
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <section class="scene" id="left">
+        <div class="kicker">01 / THE HOLIDAY HEIST</div>
+        <h1>Just borrowing<br />this one.</h1>
+        <p>A sneak, a reach, a little lift. Then straight into the sack.</p>
+        <article data-grinch-gift>
+          That's a very full sack.<small>REAL RUNTIME · @FLURITHEME/GRINCH</small>
+        </article>
+      </section>
+      <section class="scene" id="right">
+        <div class="kicker">02 / A CHANGE OF HEART</div>
+        <h1>A little kindness<br />goes a long way.</h1>
+        <p>Warm his heart. Bring every present home. Make a friend.</p>
+        <article data-grinch-gift>
+          There is still time to be nice.<small>ZERO DEPENDENCIES · MIT LICENSE</small>
+        </article>
+      </section>
+    </div>
+    <script type="module">
+      import { createGrinch } from '../src/index.ts';
+      window.createGrinch = createGrinch;
+      window.previewLeft = createGrinch({
+        root: document.querySelector('#left'),
+        territory: 'root',
+        size: 1.8,
+        entrance: 'appear',
+        autoSteal: false,
+        fearRadius: 0,
+      });
+      window.previewRight = createGrinch({
+        root: document.querySelector('#right'),
+        territory: 'root',
+        size: 1.8,
+        entrance: 'appear',
+        autoSteal: false,
+        fearRadius: 0,
+      });
+    </script>
+  </body>
+</html>
