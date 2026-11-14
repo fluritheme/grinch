@@ -6,7 +6,7 @@
     <title>Grinch by Fluri — A little holiday mischief for your website</title>
     <meta
       name="description"
-      content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. Free TypeScript npm package."
+      content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. Try the interactive preview from Fluri Themes."
     />
     <meta name="theme-color" content="#b9e94b" />
     <meta name="author" content="František Gejdoš" />
@@ -30,23 +30,30 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "SoftwareSourceCode",
+            "@type": "SoftwareApplication",
             "@id": "https://grinch.fluri.xyz/#software",
             "name": "Grinch by Fluri",
             "description": "An animated holiday character that steals illustrated presents, climbs page surfaces, hides and reacts to visitors.",
             "programmingLanguage": "TypeScript",
-            "codeRepository": "https://github.com/fluritheme/grinch",
-            "downloadUrl": "https://www.npmjs.com/package/@fluritheme/grinch",
             "license": "https://opensource.org/license/mit",
-            "author": { "@id": "https://fluri.xyz/#founder" },
-            "publisher": { "@id": "https://fluri.xyz/#organization" }
+            "author": {
+              "@id": "https://fluri.xyz/#founder"
+            },
+            "publisher": {
+              "@id": "https://fluri.xyz/#organization"
+            },
+            "applicationCategory": "DesignApplication",
+            "operatingSystem": "Web",
+            "url": "https://grinch.fluri.xyz/"
           },
           {
             "@type": "Organization",
             "@id": "https://fluri.xyz/#organization",
             "name": "Fluri Themes",
             "url": "https://fluri.xyz/",
-            "founder": { "@id": "https://fluri.xyz/#founder" }
+            "founder": {
+              "@id": "https://fluri.xyz/#founder"
+            }
           },
           {
             "@type": "Person",
@@ -72,8 +79,7 @@
         >fluri<span>✳</span></a
       ><span class="edition">03 / GRINCH</span>
       <nav aria-label="Main navigation">
-        <a href="#install">Get the package ↗</a
-        ><a href="https://github.com/fluritheme/grinch">Source ↗</a>
+        <a href="#install">About the preview ↗</a><a href="https://fluri.xyz/">All themes ↗</a>
       </nav>
     </header>
     <main>
@@ -184,17 +190,17 @@
       <section class="install" id="install" data-grinch-ui data-grinch-ignore>
         <div>
           <span class="eyebrow">A FEW LINES. A LITTLE TROUBLE.</span>
-          <h2>Invite him in.</h2>
+          <h2>A little preview.</h2>
           <button
             class="command"
             id="copy-install"
             type="button"
-            aria-label="Copy npm installation command"
+            aria-label="Show package preview status"
           >
-            <code>npm i @fluritheme/grinch</code><span aria-hidden="true">⧉</span>
+            <code>Package release coming soon</code><span aria-hidden="true">⧉</span>
           </button>
-          <p>TypeScript · Zero runtime dependencies · MIT · No CSS import</p>
-          <a href="https://github.com/fluritheme/grinch#readme">Read the full guide ↗</a>
+          <p>Sneak · Climb · Steal · Hide · Find a little kindness</p>
+          <a href="#controls">Try every little feature ↗</a>
         </div>
         <div class="code-panel">
           <div class="tabs" role="tablist" aria-label="Framework examples">
@@ -295,7 +301,7 @@ visitor.destroy();</code></pre>
       <nav aria-label="More Fluri themes">
         <a href="https://winter.fluri.xyz/">Winter ↗</a
         ><a href="https://spider.fluri.xyz/">Spider ↗</a
-        ><a href="https://github.com/fluritheme/grinch">GitHub ↗</a>
+        ><a href="https://fluri.xyz/">All themes ↗</a>
       </nav>
     </footer>
     <div id="toast" role="status" hidden></div>

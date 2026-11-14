@@ -3,7 +3,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const manifest = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'));
-const packages = manifest.private ? ['packages/core', 'packages/react'] : ['.'];
+const packages = ['.'];
 for (const relative of packages) {
   const source = join(root, relative);
   const pkg = JSON.parse(await readFile(join(source, 'package.json'), 'utf8'));

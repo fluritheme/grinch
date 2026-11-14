@@ -92,7 +92,7 @@ test('invalid selectors leave no installed overlay and host clicks work', async 
   await page.locator('#click').click();
   expect(await page.evaluate(() => window.clicks)).toBe(1);
   await page.getByRole('button', { name: 'Pause Grinch', exact: true }).click();
-  expect(await page.evaluate(() => window.grinch.getState().state)).toBe('paused');
+  await expect.poll(() => page.evaluate(() => window.grinch.getState().state)).toBe('paused');
 });
 test('respects reduced motion and contains layout on phones', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });

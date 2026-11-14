@@ -6,14 +6,11 @@
 
 A mischievous holiday visitor who sneaks around your website, steals presents, hides behind cards, and discovers a softer side of Christmas.
 
-[![npm version](https://grinch.fluri.xyz/npm-version.svg)](https://www.npmjs.com/package/@fluritheme/grinch)
-[![npm downloads](https://img.shields.io/npm/dm/@fluritheme/grinch?color=153629&label=downloads)](https://www.npmjs.com/package/@fluritheme/grinch)
-[![Quality](https://github.com/fluritheme/grinch/actions/workflows/ci.yml/badge.svg)](https://github.com/fluritheme/grinch/actions/workflows/ci.yml)
-[![MIT license](https://img.shields.io/badge/license-MIT-c92c42)](./LICENSE)
+**Interactive preview — the npm package is not published yet.**
 
-[Live playground](https://grinch.fluri.xyz/) · [All Fluri themes](https://fluri.xyz/) · [npm](https://www.npmjs.com/package/@fluritheme/grinch) · [JSR](https://jsr.io/@fluritheme/grinch)
+[Live playground](https://grinch.fluri.xyz/) · [All Fluri themes](https://fluri.xyz/)
 
-![Grinch's holiday heist playground](https://raw.githubusercontent.com/fluritheme/grinch/main/assets/readme/playground.png)
+![Grinch's holiday heist playground](https://grinch.fluri.xyz/readme/playground.png)
 
 </div>
 
@@ -27,11 +24,13 @@ A mischievous holiday visitor who sneaks around your website, steals presents, h
 - **Your content stays yours.** Presents are illustrated props. Buttons, images, text and links are never stolen or rearranged.
 - **Small and considerate.** Zero runtime dependencies, no runtime network requests, bounded gift count, one Canvas, reduced-motion support, pause/resume and complete cleanup.
 
-![Stealing a present and discovering kindness](https://raw.githubusercontent.com/fluritheme/grinch/main/assets/readme/routines.png)
+![Stealing a present and discovering kindness](https://grinch.fluri.xyz/readme/routines.png)
 
 These previews come from the running package. The character and presents are original procedural vector artwork, rendered in Canvas.
 
-## Install
+## Install after release
+
+The package is currently private and unpublished. The following examples document the prepared API. Try it now in the [playground](https://grinch.fluri.xyz/).
 
 ```sh
 npm i @fluritheme/grinch

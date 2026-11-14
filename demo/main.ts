@@ -150,7 +150,7 @@ async function copy(text: string): Promise<void> {
   }
 }
 get('copy-install').addEventListener('click', () => {
-  void copy('npm i @fluritheme/grinch');
+  toast('The package is coming soon. You can try every feature here today.');
 });
 get('copy-code').addEventListener('click', () => {
   void copy(examples[active]);
