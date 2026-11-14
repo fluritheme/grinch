@@ -1,12 +1,14 @@
 # Grinch by Fluri
 
-A dependency-free holiday character for websites.
+A dependency-free holiday character for websites under the Fluri Themes Commercial License.
 Created by František Gejdoš, founder of Fluri.
 
 - Demo and docs: https://grinch.fluri.xyz/
 - npm: https://www.npmjs.com/package/@fluritheme/grinch
 - Source: https://github.com/fluritheme/grinch
+- License: https://fluri.xyz/license/
+- Earlier versions through 0.1.1 remain MIT.
 - All themes: https://fluri.xyz/
 - Founder: https://fluri.xyz/founder/
 
-He sneaks along element edges, steals drawn presents, hides behind cards, reacts to pointers, and returns gifts in kindness mode. Canvas rendering, TypeScript, zero network requests from the runtime. Supports React, Vue and vanilla JavaScript. Respects reduced motion. Version 0.1.1.
+He sneaks along element edges, steals drawn presents, hides behind cards, reacts to pointers, and returns gifts in kindness mode. Canvas rendering, TypeScript, zero network requests from the runtime. Supports React, Vue and vanilla JavaScript. Respects reduced motion. Version 0.2.0.

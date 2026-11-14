@@ -1508,3 +1508,13 @@ section[id] {
     grid-template-columns: 150px minmax(0, 1fr);
   }
 }
+
+.install-top > .license-notice {
+  font-size: 13px;
+  line-height: 1.65;
+  max-width: 44ch;
+}
+.license-notice a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

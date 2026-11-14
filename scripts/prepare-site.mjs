@@ -13,7 +13,7 @@ await writeFile(
 );
 await writeFile(
   'demo/public/llms.txt',
-  `# Grinch by Fluri\n\nA dependency-free holiday character for websites.\nCreated by František Gejdoš, founder of Fluri.\n\n- Demo and docs: https://grinch.fluri.xyz/\n- npm: https://www.npmjs.com/package/@fluritheme/grinch\n- Source: https://github.com/fluritheme/grinch\n- All themes: https://fluri.xyz/\n- Founder: https://fluri.xyz/founder/\n\nHe sneaks along element edges, steals drawn presents, hides behind cards, reacts to pointers, and returns gifts in kindness mode. Canvas rendering, TypeScript, zero network requests from the runtime. Supports React, Vue and vanilla JavaScript. Respects reduced motion. Version ${pkg.version}.\n`,
+  `# Grinch by Fluri\n\nA dependency-free holiday character for websites under the Fluri Themes Commercial License.\nCreated by František Gejdoš, founder of Fluri.\n\n- Demo and docs: https://grinch.fluri.xyz/\n- npm: https://www.npmjs.com/package/@fluritheme/grinch\n- Source: https://github.com/fluritheme/grinch\n- License: https://fluri.xyz/license/\n- Earlier versions through 0.1.1 remain MIT.\n- All themes: https://fluri.xyz/\n- Founder: https://fluri.xyz/founder/\n\nHe sneaks along element edges, steals drawn presents, hides behind cards, reacts to pointers, and returns gifts in kindness mode. Canvas rendering, TypeScript, zero network requests from the runtime. Supports React, Vue and vanilla JavaScript. Respects reduced motion. Version ${pkg.version}.\n`,
 );
 await writeFile(
   'demo/public/grinch-mark.svg',

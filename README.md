@@ -8,7 +8,7 @@ A mischievous holiday visitor who sneaks around your website, steals presents, h
 
 [![npm version](https://grinch.fluri.xyz/npm-version.svg)](https://www.npmjs.com/package/@fluritheme/grinch)
 [![npm downloads](https://img.shields.io/npm/dm/%40fluritheme%2Fgrinch?color=c92c42&label=downloads)](https://www.npmjs.com/package/@fluritheme/grinch)
-[![MIT license](https://img.shields.io/badge/license-MIT-1f6544)](https://github.com/fluritheme/grinch/blob/main/LICENSE)
+[![Commercial licence](https://fluri.xyz/commercial-license.svg)](https://fluri.xyz/license/)
 
 [Live playground](https://grinch.fluri.xyz/) · [All Fluri themes](https://fluri.xyz/) · [Source](https://github.com/fluritheme/grinch)
 
@@ -30,7 +30,9 @@ A mischievous holiday visitor who sneaks around your website, steals presents, h
 
 These previews come from the running package. The character and presents are original procedural vector artwork, rendered in Canvas.
 
-## Install
+## Licence and installation
+
+Current releases require the [EUR 19 lifetime licence](https://fluri.xyz/license/) before production deployment or client delivery. It covers all current and future Fluri themes on unlimited personal and client websites. Private non-production evaluation is permitted. Earlier MIT versions remain MIT; see [the version boundaries](https://fluri.xyz/licensing.md).
 
 Add a little holiday mischief to any website. No CSS import, API key or runtime network request. Try every behavior in the [playground](https://grinch.fluri.xyz/).
 
@@ -186,4 +188,4 @@ pnpm dev
 
 The suite covers the heist and return state machine, configuration, SSR, cleanup, scrolling, mobile layout, host interactions and reduced motion across Chromium, Firefox, WebKit and iPhone-sized WebKit.
 
-MIT. Built by [František Gejdoš](https://fluri.xyz/founder/), founder of [Fluri](https://fluri.xyz/).
+[Fluri Themes Commercial License 1.0](https://fluri.xyz/license/). Built by [František Gejdoš](https://fluri.xyz/founder/), founder of [Fluri](https://fluri.xyz/).

@@ -34,7 +34,7 @@ export default {
     headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
     headers.set(
       'Content-Security-Policy',
-      "default-src 'self'; script-src 'self' 'sha256-F1QBnzZFUm9+4BO9CIEgFNKWlaeIHhAjGwLJ9eFaziw='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "default-src 'self'; script-src 'self' 'sha256-LeuzFgPcemBZ1pVeCzUXHgx/E/24KkSGY8o6/b1ha3s='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
     );
     const observation = observe(request, response);
     if (observation && env.CENTRAL_DB) {

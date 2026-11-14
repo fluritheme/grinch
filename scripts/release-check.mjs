@@ -1,3 +1,4 @@
+await import('./check-licensing.mjs');
 import { readFile, readdir } from 'node:fs/promises';
 import { gzipSync } from 'node:zlib';
 import assert from 'node:assert/strict';

@@ -1,9 +1,9 @@
 {
   "name": "@fluritheme/grinch",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A mischievous green holiday visitor that sneaks around your website, steals illustrated presents, hides behind elements and learns a little kindness. Zero dependencies.",
   "type": "module",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "author": {
     "name": "František Gejdoš",
     "url": "https://fluri.xyz/founder/",
@@ -38,7 +38,10 @@
     "dist",
     "README.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "LICENSE-MIT-LEGACY",
+    "LICENSING.md",
+    "licensing.json"
   ],
   "exports": {
     ".": {
@@ -58,7 +61,7 @@
   "packageManager": "pnpm@10.33.2",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "build:site": "node scripts/prepare-seo.mjs grinch && node scripts/prepare-site.mjs && vite build",
+    "build:site": "node scripts/prepare-licensing.mjs grinch && node scripts/prepare-seo.mjs grinch && node scripts/prepare-site.mjs && vite build",
     "dev": "vite --host 127.0.0.1 --port 5196",
     "preview": "vite preview --host 127.0.0.1 --port 4196",
     "typecheck": "tsc --noEmit",
