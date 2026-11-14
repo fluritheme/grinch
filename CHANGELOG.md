@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-14
+
+- Point the npm Homepage link to https://fluri.xyz/. The Grinch playground and documentation remain at grinch.fluri.xyz.
+- Keep the animation runtime unchanged.
+
 ## 0.1.0 — 2026-11-14
 
 - Introduce an original animated green holiday visitor with articulated limbs, blinking, a gift sack and three entrance styles.

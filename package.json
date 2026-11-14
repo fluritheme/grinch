@@ -1,6 +1,6 @@
 {
   "name": "@fluritheme/grinch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A mischievous green holiday visitor that sneaks around your website, steals illustrated presents, hides behind elements and learns a little kindness. Zero dependencies.",
   "type": "module",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "url": "https://fluri.xyz/founder/",
     "email": "fluritheme@gmail.com"
   },
-  "homepage": "https://grinch.fluri.xyz/",
+  "homepage": "https://fluri.xyz/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fluritheme/grinch.git"
