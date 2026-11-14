@@ -151,7 +151,7 @@ async function copy(text: string): Promise<void> {
   }
 }
 get('copy-install').addEventListener('click', () => {
-  toast('The package is coming soon. You can try every feature here today.');
+  void copy('npm i @fluritheme/grinch');
 });
 get('copy-code').addEventListener('click', () => {
   void copy(examples[active]);

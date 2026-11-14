@@ -1,10 +1,11 @@
 # Grinch by Fluri
 
-A dependency-free holiday character for websites, currently in preview.
+A dependency-free holiday character for websites.
 Created by František Gejdoš, founder of Fluri.
 
 - Demo and docs: https://grinch.fluri.xyz/
-- Status: interactive preview; npm release is not published yet.
+- npm: https://www.npmjs.com/package/@fluritheme/grinch
+- Source: https://github.com/fluritheme/grinch
 - All themes: https://fluri.xyz/
 - Founder: https://fluri.xyz/founder/
 

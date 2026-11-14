@@ -11,6 +11,13 @@
       "custom_domain": true,
     },
   ],
+  "d1_databases": [
+    {
+      "binding": "CENTRAL_DB",
+      "database_name": "fluri-site-analytics",
+      "database_id": "e370034a-1c15-43e7-8468-a43808d8a270",
+    },
+  ],
   "assets": {
     "binding": "ASSETS",
     "run_worker_first": true,

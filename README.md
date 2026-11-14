@@ -6,9 +6,11 @@
 
 A mischievous holiday visitor who sneaks around your website, steals presents, hides behind cards, and discovers a softer side of Christmas.
 
-**Interactive preview — the npm package is not published yet.**
+[![npm version](https://grinch.fluri.xyz/npm-version.svg)](https://www.npmjs.com/package/@fluritheme/grinch)
+[![npm downloads](https://img.shields.io/npm/dm/%40fluritheme%2Fgrinch?color=c92c42&label=downloads)](https://www.npmjs.com/package/@fluritheme/grinch)
+[![MIT license](https://img.shields.io/badge/license-MIT-1f6544)](https://github.com/fluritheme/grinch/blob/main/LICENSE)
 
-[Live playground](https://grinch.fluri.xyz/) · [All Fluri themes](https://fluri.xyz/)
+[Live playground](https://grinch.fluri.xyz/) · [All Fluri themes](https://fluri.xyz/) · [Source](https://github.com/fluritheme/grinch)
 
 ![Grinch's holiday heist playground](https://grinch.fluri.xyz/readme/playground.png)
 
@@ -28,9 +30,9 @@ A mischievous holiday visitor who sneaks around your website, steals presents, h
 
 These previews come from the running package. The character and presents are original procedural vector artwork, rendered in Canvas.
 
-## Install after release
+## Install
 
-The package is currently private and unpublished. The following examples document the prepared API. Try it now in the [playground](https://grinch.fluri.xyz/).
+Add a little holiday mischief to any website. No CSS import, API key or runtime network request. Try every behavior in the [playground](https://grinch.fluri.xyz/).
 
 ```sh
 npm i @fluritheme/grinch

@@ -36,7 +36,7 @@ await page.evaluate(() => {
   document.querySelector('#left p').textContent = 'A mischievous holiday visitor for your website.';
   document.querySelector('#left article').style.left = '700px';
   document.querySelector('#left article').style.top = '420px';
-  document.querySelector('#left article').textContent = 'GRINCH BY FLURI · INTERACTIVE PREVIEW';
+  document.querySelector('#left article').textContent = 'npm i @fluritheme/grinch';
   document.querySelector('#left article').style.fontSize = '23px';
   window.previewLeft.destroy();
   window.previewLeft = window.createGrinch({

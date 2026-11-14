@@ -5,7 +5,7 @@ const channel = pkg.private ? 'preview' : 'npm';
 await mkdir('demo/public', { recursive: true });
 await writeFile(
   'demo/public/robots.txt',
-  'User-agent: *\nAllow: /\nSitemap: https://grinch.fluri.xyz/sitemap.xml\n',
+  'User-agent: *\nAllow: /\nDisallow: /dashboard\nDisallow: /api/\nDisallow: /internal/\nSitemap: https://grinch.fluri.xyz/sitemap.xml\n',
 );
 await writeFile(
   'demo/public/sitemap.xml',
@@ -13,7 +13,7 @@ await writeFile(
 );
 await writeFile(
   'demo/public/llms.txt',
-  `# Grinch by Fluri\n\nA dependency-free holiday character for websites, currently in preview.\nCreated by František Gejdoš, founder of Fluri.\n\n- Demo and docs: https://grinch.fluri.xyz/\n- Status: interactive preview; npm release is not published yet.\n- All themes: https://fluri.xyz/\n- Founder: https://fluri.xyz/founder/\n\nHe sneaks along element edges, steals drawn presents, hides behind cards, reacts to pointers, and returns gifts in kindness mode. Canvas rendering, TypeScript, zero network requests from the runtime. Supports React, Vue and vanilla JavaScript. Respects reduced motion. Version ${pkg.version}.\n`,
+  `# Grinch by Fluri\n\nA dependency-free holiday character for websites.\nCreated by František Gejdoš, founder of Fluri.\n\n- Demo and docs: https://grinch.fluri.xyz/\n- npm: https://www.npmjs.com/package/@fluritheme/grinch\n- Source: https://github.com/fluritheme/grinch\n- All themes: https://fluri.xyz/\n- Founder: https://fluri.xyz/founder/\n\nHe sneaks along element edges, steals drawn presents, hides behind cards, reacts to pointers, and returns gifts in kindness mode. Canvas rendering, TypeScript, zero network requests from the runtime. Supports React, Vue and vanilla JavaScript. Respects reduced motion. Version ${pkg.version}.\n`,
 );
 await writeFile(
   'demo/public/grinch-mark.svg',

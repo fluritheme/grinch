@@ -4,25 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Grinch by Fluri — A little holiday mischief for your website</title>
-    <meta
-      name="description"
-      content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. Try the interactive preview from Fluri Themes."
-    />
+
     <meta name="theme-color" content="#1f6544" />
-    <meta name="author" content="František Gejdoš" />
-    <link rel="canonical" href="https://grinch.fluri.xyz/" />
+
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta property="og:title" content="Grinch by Fluri — A little holiday mischief." />
-    <meta
-      property="og:description"
-      content="Your website. His holiday heist. A tiny green visitor with a sack full of personality."
-    />
+
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://grinch.fluri.xyz/" />
-    <meta property="og:image" content="https://grinch.fluri.xyz/social.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/style.css" />
     <script type="application/ld+json">
@@ -34,26 +22,25 @@
             "@id": "https://grinch.fluri.xyz/#software",
             "name": "Grinch by Fluri",
             "description": "An animated holiday character that steals illustrated presents, climbs page surfaces, hides and reacts to visitors.",
-            "programmingLanguage": "TypeScript",
             "license": "https://opensource.org/license/mit",
-            "author": {
-              "@id": "https://fluri.xyz/#founder"
-            },
-            "publisher": {
-              "@id": "https://fluri.xyz/#organization"
-            },
+            "author": { "@id": "https://fluri.xyz/#founder" },
+            "publisher": { "@id": "https://fluri.xyz/#organization" },
             "applicationCategory": "DesignApplication",
             "operatingSystem": "Web",
-            "url": "https://grinch.fluri.xyz/"
+            "url": "https://grinch.fluri.xyz/",
+            "keywords": [
+              "Grinch website animation",
+              "Christmas website character",
+              "holiday website effects",
+              "animated holiday presents"
+            ]
           },
           {
             "@type": "Organization",
             "@id": "https://fluri.xyz/#organization",
             "name": "Fluri Themes",
             "url": "https://fluri.xyz/",
-            "founder": {
-              "@id": "https://fluri.xyz/#founder"
-            }
+            "founder": { "@id": "https://fluri.xyz/#founder" }
           },
           {
             "@type": "Person",
@@ -65,12 +52,52 @@
             "sameAs": [
               "https://www.instagram.com/gejdosfrantisek/",
               "https://www.linkedin.com/in/gejdosfrantisek/"
-            ]
+            ],
+            "worksFor": { "@id": "https://fluri.xyz/#organization" }
           }
         ]
       }
     </script>
     <script type="module" src="/main.ts"></script>
+
+    <link rel="canonical" href="https://grinch.fluri.xyz/" />
+    <meta
+      name="description"
+      content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. A zero-dependency TypeScript package from Fluri Themes."
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="author" content="František Gejdoš" />
+    <meta name="msvalidate.01" content="2DA9F1E4496B9F72E22C73EBF6FEA09A" />
+    <meta property="og:site_name" content="Grinch by Fluri" />
+    <meta
+      property="og:title"
+      content="Grinch by Fluri — A little holiday mischief for your website"
+    />
+    <meta
+      property="og:description"
+      content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. A zero-dependency TypeScript package from Fluri Themes."
+    />
+    <meta property="og:url" content="https://grinch.fluri.xyz/" />
+    <meta property="og:image" content="https://grinch.fluri.xyz/social.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Grinch by Fluri — interactive website effects by Fluri Themes"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Grinch by Fluri — A little holiday mischief for your website"
+    />
+    <meta
+      name="twitter:description"
+      content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. A zero-dependency TypeScript package from Fluri Themes."
+    />
+    <meta name="twitter:image" content="https://grinch.fluri.xyz/social.png" />
   </head>
   <body>
     <a class="skip" href="#controls">Skip to the controls</a>
@@ -223,9 +250,9 @@
           </article>
         </div>
       </section>
-      <section class="spec-strip" aria-label="Preview qualities">
+      <section class="spec-strip" aria-label="Package qualities">
         <span>ZERO DEPENDENCIES</span><span>ORIGINAL VECTOR CHARACTER</span
-        ><span>REDUCED-MOTION AWARE</span><span>INTERACTIVE PREVIEW</span>
+        ><span>REDUCED-MOTION AWARE</span><span>MIT LICENSED</span>
       </section>
       <section
         id="install"
@@ -235,16 +262,17 @@
         data-grinch-ignore
       >
         <div class="install-top">
-          <span class="eyebrow">A LITTLE SNEAK PEEK.</span>
+          <span class="eyebrow">ONE SMALL INSTALL.</span>
           <h2 id="install-title">Make room<br />for mischief.</h2>
-          <button class="command" id="copy-install" aria-label="Show package preview status">
-            <span>↗</span> Package coming soon <span>♡</span>
+          <button class="command" id="copy-install" aria-label="Copy npm install command">
+            <span>$</span> npm i @fluritheme/grinch <span>⧉</span>
           </button>
           <p>
-            The resident is ready to play with here.<br />The npm package is being kept private
-            while we polish the little details.
+            Zero dependencies. TypeScript included.<br />Works with React, Vue and plain JavaScript.
           </p>
-          <a class="preview-link" href="#controls">Back to the playground ↗</a>
+          <a class="preview-link" href="https://github.com/fluritheme/grinch"
+            >Explore the source ↗</a
+          >
         </div>
         <div class="code-window">
           <div class="code-tabs" role="tablist" aria-label="Framework examples">
@@ -345,7 +373,8 @@ visitor.destroy();</code></pre>
         <div>
           <a href="https://winter.fluri.xyz/">Winter ↗</a
           ><a href="https://spider.fluri.xyz/">Spider ↗</a
-          ><a href="https://fluri.xyz/">All themes ↗</a>
+          ><a href="https://fluri.xyz/">All themes ↗</a
+          ><a href="https://fluri.xyz/privacy/">Privacy</a>
         </div>
       </div>
       <p>

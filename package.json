@@ -58,7 +58,7 @@
   "packageManager": "pnpm@10.33.2",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "build:site": "node scripts/prepare-site.mjs && vite build",
+    "build:site": "node scripts/prepare-seo.mjs grinch && node scripts/prepare-site.mjs && vite build",
     "dev": "vite --host 127.0.0.1 --port 5196",
     "preview": "vite preview --host 127.0.0.1 --port 4196",
     "typecheck": "tsc --noEmit",
@@ -79,6 +79,5 @@
     "vite": "8.3.6",
     "vitest": "5.1.0",
     "wrangler": "4.158.0"
-  },
-  "private": true
+  }
 }
