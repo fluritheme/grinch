@@ -8,11 +8,11 @@
       name="description"
       content="A mischievous green holiday visitor for your website. Watch him sneak, climb, steal illustrated presents, hide behind cards, and find a little kindness. Try the interactive preview from Fluri Themes."
     />
-    <meta name="theme-color" content="#b9e94b" />
+    <meta name="theme-color" content="#1f6544" />
     <meta name="author" content="František Gejdoš" />
     <link rel="canonical" href="https://grinch.fluri.xyz/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta property="og:title" content="Grinch by Fluri — He's up to snow good." />
+    <meta property="og:title" content="Grinch by Fluri — A little holiday mischief." />
     <meta
       property="og:description"
       content="Your website. His holiday heist. A tiny green visitor with a sack full of personality."
@@ -74,136 +74,180 @@
   </head>
   <body>
     <a class="skip" href="#controls">Skip to the controls</a>
-    <header class="nav" data-grinch-ui data-grinch-ignore>
-      <a class="brand" href="https://fluri.xyz/" aria-label="Fluri Themes home"
-        >fluri<span>✳</span></a
-      ><span class="edition">03 / GRINCH</span>
-      <nav aria-label="Main navigation">
-        <a href="#install">About the preview ↗</a><a href="https://fluri.xyz/">All themes ↗</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero" id="habitat" aria-labelledby="title">
-        <div class="kicker">
-          <span>A LITTLE GREEN. A LITTLE GREED.</span><span>THE HOLIDAY HEIST / 2026</span>
+    <section class="hero evergreen" id="playground" aria-labelledby="hero-title">
+      <header class="header" data-grinch-ui data-grinch-ignore>
+        <a class="wordmark" href="#playground" aria-label="Grinch by Fluri home"
+          ><img src="/grinch-mark.svg" width="28" height="28" alt="" />grinch<span
+            >BY FLURI</span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#details">The little details</a><a href="#controls">Playground ↓</a
+          ><a href="https://fluri.xyz/">All themes ↗</a>
+        </nav>
+      </header>
+      <div
+        id="habitat"
+        class="habitat"
+        role="region"
+        aria-label="Live Grinch habitat: watch the resident steal presents and find a little kindness"
+      >
+        <div class="hero-topline">
+          <span>A LITTLE HOLIDAY MISCHIEF.</span><span>MAKE ROOM FOR ONE MORE.</span>
         </div>
-        <h1 id="title">UP TO<br /><span>SNOW GOOD.</span></h1>
-        <div class="hero-bottom">
-          <p>Your website.<br />His questionable<br />holiday plans.</p>
-          <div class="stamp">
-            TINY<br />SACK.<br /><em>BIG<br />ENERGY.</em>
+        <h1 id="hero-title">grinch.</h1>
+        <div class="hero-intro">
+          <p>Your presents.<br /><span>His plans.</span></p>
+          <div>
+            <p>
+              A sneak. A climb. A suspiciously full sack.<br />
+              Catch him in the act. Or see what a little kindness can do.
+            </p>
+            <a class="inline-link" href="#controls">Give his heart a nudge <span>↗</span></a>
           </div>
-          <a class="jump" href="#controls">Meet the mischief <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="gift-row" aria-label="The little holiday gift shelves">
-          <article class="gift-card cream" id="gift-one" data-grinch-gift data-grinch-object>
-            <span class="card-number">01 / THE NICE LIST</span>
-            <h2>Leave a little<br />room for<br /><em>delight.</em></h2>
-            <span class="card-foot">SOMEONE HAS OTHER PLANS. ↗</span>
-          </article>
-          <article class="gift-card red" id="gift-two" data-grinch-gift data-grinch-object>
-            <span class="card-number">02 / THE NAUGHTY LIST</span>
-            <h2>A present.<br />A plan.<br />A little problem.</h2>
-            <span class="card-foot">KEEP AN EYE ON THE RIBBON. ↗</span>
-          </article>
-          <article class="gift-card forest" id="gift-three" data-grinch-gift data-grinch-object>
-            <span class="card-number">03 / THE PLOT TWIST</span>
-            <h2>Maybe his<br />heart just<br /><em>needs a nudge.</em></h2>
-            <span class="card-foot">THERE'S STILL TIME TO BE NICE. ↗</span>
-          </article>
+        <article class="resident-tag object-one" id="gift-one" data-grinch-gift data-grinch-object>
+          <span class="tiny">TO: YOU. FROM: YOUR NEW RESIDENT.</span
+          ><strong>just one<br />little present.</strong
+          ><span class="tag-bottom">DEFINITELY NOT BORROWED. <b>↗</b></span>
+        </article>
+        <article class="resident-tag object-two" id="gift-two" data-grinch-gift data-grinch-object>
+          <span class="tiny">A NOTE FROM THE NICE LIST.</span
+          ><strong>there's still<br />time to be nice.</strong
+          ><span class="tag-bottom">A LITTLE HEART GOES A LONG WAY. <b>♡</b></span>
+        </article>
+        <div class="telemetry" data-grinch-ui>
+          <span><i class="signal"></i> LIVE RESIDENT</span
+          ><span id="activity">MAKING AN ENTRANCE</span
+          ><span><b id="stolen-count">0</b> / <b id="gift-count">2</b> IN THE SACK</span>
         </div>
-      </section>
+      </div>
+      <div class="hero-bottom">
+        <span>LEAVE A PRESENT. WATCH HIS PLANS UNFOLD.</span
+        ><a href="#controls">A little mischief <span>↓</span></a>
+      </div>
+    </section>
+    <main>
       <section
-        class="control-room"
         id="controls"
-        aria-labelledby="control-title"
+        class="control-strip"
+        aria-label="Customize your holiday resident"
         data-grinch-ui
         data-grinch-ignore
       >
-        <div class="control-heading">
-          <div>
-            <span class="eyebrow">YOU'RE IN ON THE MISCHIEF.</span>
-            <h2 id="control-title">Give him<br />a little nudge.</h2>
+        <div class="control-title">
+          <span class="eyebrow">YOUR HOLIDAY RESIDENT</span>
+          <h2>A little nudge.</h2>
+        </div>
+        <div class="settings">
+          <fieldset>
+            <legend>The surroundings</legend>
+            <div class="environment">
+              <button data-theme="evergreen" aria-pressed="true">Evergreen</button
+              ><button data-theme="paper" aria-pressed="false">Parchment</button
+              ><button data-theme="dark" aria-pressed="false">Christmas Eve</button>
+            </div>
+          </fieldset>
+          <div class="slider">
+            <label for="size">Presence <output id="size-value" for="size">1.2×</output></label
+            ><input id="size" type="range" min="0.6" max="1.8" step="0.1" value="1.2" />
           </div>
+          <div class="slider">
+            <label for="speed"
+              >Mischief speed <output id="speed-value" for="speed">1.0×</output></label
+            ><input id="speed" type="range" min="0.25" max="2" step="0.05" value="1" />
+          </div>
+          <label class="switch"
+            ><input id="shy" type="checkbox" checked role="switch" /><span>Pointer-shy</span></label
+          >
+        </div>
+        <div class="transport">
+          <button id="pause" aria-pressed="false">Ⅱ Pause mischief</button
+          ><button id="restart">Start fresh ↺</button>
+        </div>
+        <div class="mischief-actions" aria-label="Play with your resident">
+          <button id="steal">Plan a little heist <span>↗</span></button
+          ><button id="shoo">Caught you! <span>!</span></button
+          ><button id="redeem">Grow his heart <span>♡</span></button
+          ><button id="return">Return the presents <span>↶</span></button>
+        </div>
+        <p class="control-caption">
+          Every present is a drawn little prop. Your links, text and scrolling stay yours. He and
+          his gifts move with the page.
+        </p>
+      </section>
+      <section id="details" class="details section-pad" aria-labelledby="details-title">
+        <div class="section-heading">
+          <span class="eyebrow">SMALL RESIDENT. QUESTIONABLE PLANS.</span>
+          <h2 id="details-title">
+            A little green.<br /><span>A little Christmas<br />character.</span>
+          </h2>
           <p>
-            He sneaks, climbs and stashes presents. Get a little too close and watch his plans
-            unravel. Or see what happens when he finds his heart.
+            Articulated arms. Blinking eyes. A very expressive grin.<br />A tiny sack with room for
+            one more present.
           </p>
         </div>
-        <div class="actions">
-          <button type="button" class="action primary" id="steal">
-            Plan a little heist <span>↗</span></button
-          ><button type="button" class="action" id="shoo">Caught you! <span>!</span></button
-          ><button type="button" class="action" id="redeem">Grow his heart <span>♡</span></button
-          ><button type="button" class="action" id="return">
-            Return the presents <span>↶</span>
-          </button>
-        </div>
-        <div class="tuning">
-          <label for="size"
-            >Presence <output id="size-value">1.2×</output
-            ><input id="size" type="range" min="0.6" max="1.8" step="0.1" value="1.2" /></label
-          ><label for="speed"
-            >Mischief speed <output id="speed-value">1.0×</output
-            ><input id="speed" type="range" min="0.25" max="2" step="0.05" value="1" /></label
-          ><label class="switch"><input id="shy" type="checkbox" checked />Pointer-shy</label
-          ><button class="pause" id="pause" aria-pressed="false">Ⅱ Pause mischief</button>
-        </div>
-        <div class="live-data">
-          <span><i></i><span id="activity">MAKING AN ENTRANCE</span></span
-          ><span><b id="stolen-count">0</b> / <b id="gift-count">3</b> IN THE SACK</span
-          ><button type="button" id="restart">Start fresh ↺</button>
-        </div>
-      </section>
-      <section class="feature-section" aria-labelledby="feature-title">
-        <div class="section-label">A SMALL CHARACTER. A WHOLE PERSONALITY.</div>
-        <h2 id="feature-title">
-          He came for the presents.<br /><em>You'll stay for the details.</em>
-        </h2>
-        <div class="feature-grid">
+        <div class="behavior-list">
           <article>
-            <span>01 / A REAL LITTLE ROUTINE</span>
-            <h3>Plan. Climb. Pinch.</h3>
-            <p>
-              A proper heist, one present at a time. Sneaky footsteps, reaching hands, a growing
-              sack and a suspiciously satisfied grin.
-            </p>
+            <span class="number">01 /</span>
+            <div>
+              <h3>He has a little routine.</h3>
+              <p>
+                Sneak along a ledge. Climb toward a present. Reach, lift, and tuck it into the sack.
+                Then look suspiciously pleased with himself.
+              </p>
+            </div>
+            <span class="behavior-glyph" aria-hidden="true">↗</span>
           </article>
           <article>
-            <span>02 / A SENSE OF PLACE</span>
-            <h3>He knows your edges.</h3>
-            <p>
-              Illustrated presents settle on real elements. The resident climbs between ledges,
-              ducks behind cards and peeks around the edge.
-            </p>
+            <span class="number">02 /</span>
+            <div>
+              <h3>He knows when he's been caught.</h3>
+              <p>
+                Get too close, or give him a tap. He startles, sends a present home, and looks for
+                somewhere to hide. Keep an eye on the edge of that card.
+              </p>
+            </div>
+            <span class="behavior-glyph" aria-hidden="true">▱</span>
           </article>
           <article>
-            <span>03 / THERE'S A SOFTER SIDE</span>
-            <h3>A little heart goes far.</h3>
-            <p>
-              Kindness mode brings the presents home. He'll wave, warm up and give everyone a break
-              from the mischief.
-            </p>
+            <span class="number">03 /</span>
+            <div>
+              <h3>There is still time to be nice.</h3>
+              <p>
+                Give his heart a nudge. The whole sack comes home, the grin softens, and your least
+                innocent resident becomes a little friend.
+              </p>
+            </div>
+            <span class="behavior-glyph" aria-hidden="true">♡</span>
           </article>
         </div>
       </section>
-      <section class="install" id="install" data-grinch-ui data-grinch-ignore>
-        <div>
-          <span class="eyebrow">A FEW LINES. A LITTLE TROUBLE.</span>
-          <h2>A little preview.</h2>
-          <button
-            class="command"
-            id="copy-install"
-            type="button"
-            aria-label="Show package preview status"
-          >
-            <code>Package release coming soon</code><span aria-hidden="true">⧉</span>
+      <section class="spec-strip" aria-label="Preview qualities">
+        <span>ZERO DEPENDENCIES</span><span>ORIGINAL VECTOR CHARACTER</span
+        ><span>REDUCED-MOTION AWARE</span><span>INTERACTIVE PREVIEW</span>
+      </section>
+      <section
+        id="install"
+        class="install section-pad"
+        aria-labelledby="install-title"
+        data-grinch-ui
+        data-grinch-ignore
+      >
+        <div class="install-top">
+          <span class="eyebrow">A LITTLE SNEAK PEEK.</span>
+          <h2 id="install-title">Make room<br />for mischief.</h2>
+          <button class="command" id="copy-install" aria-label="Show package preview status">
+            <span>↗</span> Package coming soon <span>♡</span>
           </button>
-          <p>Sneak · Climb · Steal · Hide · Find a little kindness</p>
-          <a href="#controls">Try every little feature ↗</a>
+          <p>
+            The resident is ready to play with here.<br />The npm package is being kept private
+            while we polish the little details.
+          </p>
+          <a class="preview-link" href="#controls">Back to the playground ↗</a>
         </div>
-        <div class="code-panel">
-          <div class="tabs" role="tablist" aria-label="Framework examples">
+        <div class="code-window">
+          <div class="code-tabs" role="tablist" aria-label="Framework examples">
             <button
               role="tab"
               aria-selected="true"
@@ -230,9 +274,7 @@
               data-code="vue"
             >
               Vue</button
-            ><button id="copy-code" type="button" aria-label="Copy selected integration">
-              Copy ⧉
-            </button>
+            ><button id="copy-code" aria-label="Copy selected integration">Copy ⧉</button>
           </div>
           <pre
             id="code"
@@ -251,58 +293,72 @@ visitor.redeem();
 
 // Clean up when your page unmounts.
 visitor.destroy();</code></pre>
+          <div class="code-footer">
+            <span>API PREVIEW · TYPESCRIPT</span><span>PACKAGE NOT YET PUBLISHED</span>
+          </div>
         </div>
       </section>
-      <section class="faq" aria-labelledby="faq-title">
-        <span class="eyebrow">BEFORE YOU LEAVE THE PRESENTS OUT.</span>
-        <h2 id="faq-title">A few little questions.</h2>
-        <details>
-          <summary>How do I place presents on my website?</summary>
-          <p>
-            Mark an element with <code>data-grinch-gift</code>. The package draws an illustrated
-            present on its upper edge. You can also pass a selector or a list of elements.
-          </p>
-        </details>
-        <details>
-          <summary>Does he keep up when the page moves?</summary>
-          <p>
-            He uses document coordinates. Present anchors follow scrolling, moving elements and
-            ordinary layout changes, including while paused. Overflow and native top-layer dialogs
-            still apply.
-          </p>
-        </details>
-        <details>
-          <summary>What about reduced motion and touch?</summary>
-          <p>
-            Reduced-motion visitors get a still character. Touch scrolling stays native, and the
-            overlay lets normal clicks pass through. Optional visitor pause controls are available.
-          </p>
-        </details>
-        <details>
-          <summary>Can I use him with Winter?</summary>
-          <p>
-            Yes. The packages run independently. Add <code>data-grinch-gift</code> to your
-            snow-covered surfaces and let both characters share the scene.
-          </p>
-        </details>
-      </section>
-      <section class="closing">
-        <span>THE HOLIDAYS COULD USE A LITTLE CHARACTER.</span>
-        <p>Make room for<br /><em>a little mischief.</em></p>
-        <a href="#install">Make it your website ↗</a>
+      <section class="questions section-pad" aria-labelledby="questions-title">
+        <div>
+          <span class="eyebrow">EVEN MISCHIEF HAS MANNERS.</span>
+          <h2 id="questions-title">A good little guest.</h2>
+        </div>
+        <div>
+          <details>
+            <summary>Will he steal my actual content?</summary>
+            <p>
+              Just the illustrated presents. Your buttons, images and text stay exactly where you
+              put them. The decorative Canvas lets normal clicks and scrolling through.
+            </p>
+          </details>
+          <details>
+            <summary>Does he work on phones?</summary>
+            <p>
+              Yes. The resident scales for smaller screens. A tap gets his attention; your page
+              scrolls naturally. With reduced motion enabled, he stays still and does not start
+              heists.
+            </p>
+          </details>
+          <details>
+            <summary>What happens when his heart grows?</summary>
+            <p>
+              All the presents fly back to their elements. He becomes friendly and waves instead of
+              planning the next heist. Start a new heist or reset the scene to bring back the
+              mischief.
+            </p>
+          </details>
+          <details>
+            <summary>Can he share a website with Winter?</summary>
+            <p>
+              Yes. The themes run independently. Snow on the ledges, a little yeti with other plans,
+              and one suspiciously full sack. You can control or pause each resident separately.
+            </p>
+          </details>
+        </div>
       </section>
     </main>
-    <footer>
-      <a class="brand" href="https://fluri.xyz/">fluri<span>✳</span></a>
-      <div>
-        Grinch by Fluri Themes<br />Made by
-        <a href="https://fluri.xyz/founder/">František Gejdoš ↗</a>
+    <footer class="footer section-pad">
+      <div class="footer-top">
+        <a class="wordmark" href="https://fluri.xyz/"
+          >grinch<span>A LITTLE CREATION BY FLURI.</span></a
+        >
+        <div>
+          <a href="https://winter.fluri.xyz/">Winter ↗</a
+          ><a href="https://spider.fluri.xyz/">Spider ↗</a
+          ><a href="https://fluri.xyz/">All themes ↗</a>
+        </div>
       </div>
-      <nav aria-label="More Fluri themes">
-        <a href="https://winter.fluri.xyz/">Winter ↗</a
-        ><a href="https://spider.fluri.xyz/">Spider ↗</a
-        ><a href="https://fluri.xyz/">All themes ↗</a>
-      </nav>
+      <p>
+        Let a little<br /><span>mischief in.</span
+        ><a href="#playground" aria-label="Back to the Grinch playground">↗</a>
+      </p>
+      <div class="footer-bottom">
+        <span>A LITTLE GREEN. A LITTLE GREED.</span><span>© FLURI / 2026</span>
+      </div>
+      <div class="maker-credit">
+        Created by
+        <a href="https://fluri.xyz/founder/">František Gejdoš, founder of Fluri Themes</a>.
+      </div>
     </footer>
     <div id="toast" role="status" hidden></div>
   </body>

@@ -14,6 +14,7 @@ function mount(): void {
   get('pause').setAttribute('aria-pressed', 'false');
   visitor = createGrinch({
     targets: '[data-grinch-gift]',
+    entrance: 'rope',
     size: Number(get<HTMLInputElement>('size').value),
     speed: Number(get<HTMLInputElement>('speed').value),
     fearRadius: get<HTMLInputElement>('shy').checked ? 90 : 0,
@@ -166,3 +167,16 @@ window.addEventListener('pageshow', (e) => {
     startStatus();
   }
 });
+
+const hero = document.querySelector<HTMLElement>('.hero')!;
+const environments = [...document.querySelectorAll<HTMLButtonElement>('[data-theme]')];
+for (const button of environments)
+  button.addEventListener('click', () => {
+    const theme = button.dataset.theme;
+    if (!theme || !['evergreen', 'paper', 'dark'].includes(theme)) return;
+    hero.classList.remove('evergreen', 'paper', 'dark');
+    hero.classList.add(theme);
+    for (const candidate of environments)
+      candidate.setAttribute('aria-pressed', String(candidate === button));
+    visitor.refresh();
+  });

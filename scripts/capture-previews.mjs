@@ -8,27 +8,20 @@ const page = await browser.newPage({
 });
 await page.goto('http://127.0.0.1:5196/');
 await page.waitForFunction(() => !!window.grinch);
-await page.clock.install();
-await page.clock.runFor(4000);
+await page.waitForFunction(() => window.grinch.getState().phase !== 'arriving');
 await page.evaluate(() => window.grinch.pause());
-await page.clock.resume();
 await page.screenshot({ path: 'assets/readme/playground.png' });
 await page.setViewportSize({ width: 1280, height: 730 });
 await page.goto('http://127.0.0.1:5196/preview.html');
 await page.waitForFunction(() => !!window.previewLeft && !!window.previewRight);
-await page.clock.install();
 await page.evaluate(() => window.previewLeft.steal());
-for (let i = 0; i < 60; i++) {
-  if (await page.evaluate(() => window.previewLeft.getState().phase === 'stashing')) break;
-  await page.clock.runFor(100);
-}
+await page.waitForFunction(() => window.previewLeft.getState().phase === 'stashing');
 await page.evaluate(() => {
   window.previewLeft.pause();
   window.previewRight.redeem();
 });
-await page.clock.runFor(700);
+await page.waitForTimeout(700);
 await page.evaluate(() => window.previewRight.pause());
-await page.clock.resume();
 await page.screenshot({ path: 'assets/readme/routines.png' });
 await page.setViewportSize({ width: 1200, height: 630 });
 await page.goto('http://127.0.0.1:5196/preview.html');
@@ -55,17 +48,13 @@ await page.evaluate(() => {
     fearRadius: 0,
   });
 });
-await page.clock.install();
-await page.clock.runFor(100);
-await page.clock.resume();
+await page.waitForTimeout(100);
 await page.screenshot({ path: 'demo/public/social.png' });
 await page.setViewportSize({ width: 390, height: 844 });
 await page.goto('http://127.0.0.1:5196/');
 await page.waitForFunction(() => !!window.grinch);
-await page.clock.install();
-await page.clock.runFor(2200);
+await page.waitForFunction(() => window.grinch.getState().phase !== 'arriving');
 await page.evaluate(() => window.grinch.pause());
-await page.clock.resume();
 await page.screenshot({ path: 'assets/readme/mobile.png', fullPage: true });
 await browser.close();
 console.log('Captured real package previews.');

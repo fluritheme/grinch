@@ -16,8 +16,12 @@ await writeFile(
   `# Grinch by Fluri\n\nA dependency-free holiday character for websites, currently in preview.\nCreated by František Gejdoš, founder of Fluri.\n\n- Demo and docs: https://grinch.fluri.xyz/\n- Status: interactive preview; npm release is not published yet.\n- All themes: https://fluri.xyz/\n- Founder: https://fluri.xyz/founder/\n\nHe sneaks along element edges, steals drawn presents, hides behind cards, reacts to pointers, and returns gifts in kindness mode. Canvas rendering, TypeScript, zero network requests from the runtime. Supports React, Vue and vanilla JavaScript. Respects reduced motion. Version ${pkg.version}.\n`,
 );
 await writeFile(
+  'demo/public/grinch-mark.svg',
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M6 15 3 12l8 1 5-3 5 3 8-1-3 3 3 4-5 1-2 7-6 3-6-3-2-7-5-1Z" fill="#79ad30"/><path d="m6 12 3-8q8-7 17 2l-4 4Z" fill="#bd3d4c"/><path d="M6 12h17M10 20q6 7 12-1" fill="none" stroke="#f6eddb" stroke-width="2"/><circle cx="13" cy="17" r="1" fill="#f6eddb"/><circle cx="20" cy="17" r="1" fill="#f6eddb"/><circle cx="26" cy="6" r="3" fill="#f6eddb"/></svg>',
+);
+await writeFile(
   'demo/public/favicon.svg',
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#b9e94b"/><path d="M13 20l19-9 19 9-5 24-14 10-14-10Z" fill="#79ad30" stroke="#153629" stroke-width="3"/><path d="M20 29l9 3m6 0 9-3M23 41q9 9 18-2" fill="none" stroke="#153629" stroke-width="3"/></svg>',
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1f6544"/><path d="M13 20l19-9 19 9-5 24-14 10-14-10Z" fill="#79ad30" stroke="#153629" stroke-width="3"/><path d="M20 29l9 3m6 0 9-3M23 41q9 9 18-2" fill="none" stroke="#153629" stroke-width="3"/></svg>',
 );
 await writeFile(
   'demo/public/npm-version.svg',
