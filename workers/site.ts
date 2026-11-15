@@ -1,3 +1,4 @@
+import { consolidated } from './consolidation';
 import { observe, record, type Database } from './traffic';
 interface Env {
   CENTRAL_DB?: Database;
@@ -9,6 +10,8 @@ export default {
     env: Env,
     context?: { waitUntil(promise: Promise<unknown>): void },
   ): Promise<Response> {
+    const migration = consolidated(request, 'gift-bandit');
+    if (migration) return migration;
     const path = new URL(request.url).pathname;
     if (path === '/dashboard' || path.startsWith('/dashboard/'))
       return new Response(null, {
