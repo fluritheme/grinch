@@ -10,7 +10,7 @@ export default {
     env: Env,
     context?: { waitUntil(promise: Promise<unknown>): void },
   ): Promise<Response> {
-    const migration = consolidated(request, 'gift-bandit');
+    const migration = consolidated(request, 'grinch');
     if (migration) return migration;
     const path = new URL(request.url).pathname;
     if (path === '/dashboard' || path.startsWith('/dashboard/'))
